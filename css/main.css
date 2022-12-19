@@ -2,11 +2,14 @@ body {
     font-family: "Lato", sans-serif;
 }
 .header {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 57px;
-    margin: 22px 31px 1.5rem;
+    height: 80px;
+    width: 100%;
 }
 .logo {
     display: flex;
@@ -69,4 +72,44 @@ line-height: 17px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color: #222222;
+}
+
+/* MAIN */
+
+main {
+    position: relative;
+    top: 80px;
+}
+.first-screeen {
+width: 100%;
+height: 670px;
+left: 0px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/back-ground-spb.jpg');
+background-size: cover ;
+}
+.first-screeen__infoContainer {
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 110px;
+padding-left: 250px;
+/* max-width: 589px; */
+}
+
+.first-screeen h2 {
+height: 117px;
+
+/* h1 */
+font-family: 'Merriweather', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 66px;
+color: #FFFFFF;
+margin-bottom: 60px;
+}
+
+.first-screeen button {
+    /* position: absolute; */
+    background-color: yellow;
 }
