@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +12,11 @@
     <script defer src="./js/index.js"></script>
     <title>Бахарев</title>
 </head>
-<body>
-    <header class="header">
+<body id="body">
+    <header  class="header">
         
         <div class="logo">
-            <a href="#!">
+            <a href="#body">
                 <img class="logo__img" src="./img/logo.png" alt="logo">
             </a>
                 <h1 class="logo__title">Баха</h1>
@@ -44,8 +44,8 @@
                 </ul>
                 
                 <ul class="header-info__links">
-                    <li ><a class="header-info__link active" href="#services">Главная</a></li>
-                    <li class="header-info__link"><a href="#!">Услуги</a></li>
+                    <li ><a class="header-info__link active" href="#body">Главная</a></li>
+                    <li class="header-info__link"><a href="#services">Услуги</a></li>
                     <li class="header-info__link"><a href="#!">О компании</a></li>
                     <li class="header-info__link"><a href="#!">Контакты</a></li>
                 </ul>
@@ -60,11 +60,37 @@
                 <button class="first-screeen__btn">Какая-то кнопка</button>
             </div>
         </section>
-        <section class="services-screen">
-            <h3 id="services" class="services-title"></h3>
-            <h2 class="services-description"></h2>
+
+        <section id="services" class="services-screen">
+            <h3  class="services-title">Наши услуги</h3>
+            <h2 class="services-description">Мы специализируемся</h2>
             <div class="services-card-container">
-                <>
+                
+                <div class="services-card civil">
+                    <h4 class="services-card_title">Жилищное право</h4>
+                    <img src="https://images.unsplash.com/photo-1531168738274-aa9955d5033f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="urban moscow">
+                </div>
+                <div class="services-card labor">
+                    <h4 class="services-card_title ">Трудовое право</h4>
+                    <img src="https://images.unsplash.com/photo-1531168738274-aa9955d5033f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="urban moscow">
+                </div>
+                <div class="services-card inherital">
+                    <h4 class="services-card_title">Наследственное право</h4>
+                    <img src="https://images.unsplash.com/photo-1531168738274-aa9955d5033f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="urban moscow">
+                </div>
+                <div class="services-card lorem1">
+                    <h4 class="services-card_title">Lorem ipsum dolor sit.</h4>
+                    <img src="https://images.unsplash.com/photo-1531168738274-aa9955d5033f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="urban moscow">
+                </div>
+                <div class="services-card lorem2">
+                    <h4 class="services-card_title">Lorem, ipsum dolor.</h4>
+                    <img src="https://images.unsplash.com/photo-1531168738274-aa9955d5033f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="urban moscow">
+                </div>
+                <div class="services-card lorem3">
+                    <h4 class="services-card_title">Lorem, ipsum.</h4>
+                    <img src="https://images.unsplash.com/photo-1531168738274-aa9955d5033f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="urban moscow">
+                </div>
+            
             </div>
         </section>
     </main>
