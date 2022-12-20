@@ -1,5 +1,6 @@
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 .header {
   position: fixed;
@@ -76,21 +77,26 @@ body {
 
 .header-info__links .active:hover,
 .header-info__links .active:focus {
-    color: #005FA3;
+  color: #005fa3;
 }
 
-.header-info__link.active{
+.header-info__link.active {
   position: relative;
 }
 
 .header-info__link.active::before {
-    content: "";
-    position: absolute;
-    width: 100%; 
-    height: 5px;
-    background-color: #005FA3;
-    bottom: -10px;
-} 
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #005fa3;
+  bottom: -10px;
+}
+
+.header-info__links li a:hover {
+  color: #005fa3;
+}
+
 /* MAIN */
 
 main {
@@ -98,7 +104,7 @@ main {
   top: 80px;
 }
 .first-screeen {
-  width: 100%;
+  width: 100vw;
   height: 670px;
   left: 0px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -140,30 +146,31 @@ main {
 }
 .first-screeen button:hover {
   transition: all 0.3s linear;
-  
+
   background-color: #064878;
 }
-/* Second Section */ 
+/* Second Section */
+
+
 .services-screen {
-  display: flex;
-  /* justify-content: center; */
-  flex-direction: column;
-  background: #EBEBEB;
-  height: 1242px;
+  /* display: flex;
+  flex-direction: column; */
+  background: #ebebeb;
   width: 100vw;
-  padding: 5% 15%;
+  padding: 3% 15%;
 }
 .services-title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 33px;
-  color: #BDBDBD;
+  margin-bottom: 10px;
+  color: #bdbdbd;
 }
 
 .services-description {
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -172,10 +179,10 @@ main {
 }
 
 .services-card-container {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .services-card {
@@ -186,35 +193,132 @@ gap: 30px;
   height: 360px;
   background-color: #064878;
   background-size: cover;
+  cursor: pointer;
 }
 
 .services-card::before {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 100%;    
-	position: absolute;  
-	background: transparent;
-	background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));  
-	opacity: 0.7;    
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  );
+  opacity: 0.7;
 }
 .services-card:hover::before {
-  background-image: linear-gradient(0deg, rgba(0, 95, 163, 0.65), rgba(0, 95, 163, 0.65))
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 95, 163, 0.65),
+    rgba(0, 95, 163, 0.65)
+  );
 }
 
 .services-card_title {
   position: absolute;
   top: 70%;
   padding: 5%;
-font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.services-card img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ABOUT */
+
+.about {
+  width: 100vw;
+  padding: 3% 15%;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.aboutLeft-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.aboutLeft-container h4 {
+font-family: 'Lato',sans-serif;
 font-style: normal;
 font-weight: 900;
 font-size: 24px;
-line-height: 30px;
-color: #FFFFFF;
+line-height: 33px;
+color: #BDBDBD;
 }
 
-.services-card img{
-  width: 100%;
-  height: 100%;
+.aboutLeft-container h3,
+.aboutLeft-container h2 {
+  font-family: 'Merriweather', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  color: #333333;
+}
+.aboutLeft-container h2 {
+  color: #005fa3;
+}
+
+.aboutLeft-container p {
+  max-width: 445px;
+}
+
+.aboutRight-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 550px;
+  /* justify-content: flex-start; */
+}
+
+.about__card {
+  height: 255px;
+  width: 255px;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #EBEBEB;
+}
+
+.about__card article {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+.about__card p {
+  font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+
+color: #000000;
 }
