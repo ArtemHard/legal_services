@@ -102,6 +102,8 @@ body {
 main {
   position: relative;
   top: 80px;
+  margin-bottom: 80px;
+
 }
 .first-screeen {
   width: 100vw;
@@ -241,6 +243,7 @@ main {
 .about {
   width: 100vw;
   padding: 3% 15%;
+
 }
 
 .about__wrapper {
@@ -321,4 +324,70 @@ font-size: 14px;
 line-height: 18px;
 
 color: #000000;
+}
+
+.about__card a {
+  font-family: 'Lato',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+/* Accent */
+
+color: #005FA3;
+}
+
+.footer {
+  width: 100vw;
+  height: 100px;
+  background: #005FA3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Lato',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  
+  color: #FFFFFF;
+}
+.footer__phoneContainer {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 0.5rem;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+.footer__iconsContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  padding: 0.5rem;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
+.footer__copyContainer {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 0.5rem;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  
+}
+
+.footer__youtube-link {
+}
+
+.footer__linkContainer {
 }
