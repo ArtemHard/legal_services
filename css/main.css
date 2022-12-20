@@ -76,17 +76,21 @@ body {
 
 .header-info__links .active:hover,
 .header-info__links .active:focus {
-    color: #005FA3;;
+    color: #005FA3;
 }
+
+.header-info__link.active{
+  position: relative;
+}
+
 .header-info__link.active::before {
     content: "";
-    /* width: 100%; */  /*НЕ РАБОТАЕТ НЕ ПОЙМУ ПОЧЕМУ*/
-    width: 50px;
+    position: absolute;
+    width: 100%; 
     height: 5px;
     background-color: #005FA3;
-    position: absolute;
-    bottom: 10px;
-}
+    bottom: -10px;
+} 
 /* MAIN */
 
 main {
@@ -106,8 +110,7 @@ main {
   flex-direction: column;
   position: absolute;
   top: 110px;
-  padding-left: 250px;
-  /* max-width: 589px; */
+  padding-left: 15%;
 }
 
 .first-screeen h2 {
