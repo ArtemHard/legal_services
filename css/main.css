@@ -628,3 +628,25 @@ color: #BDBDBD;
 .footer__link img {
   color: #BDBDBD;
 }
+
+@media(max-width: 667px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    padding: 1.5rem auto;
+  }
+  .footer__phoneContainer {
+    width: 80%;
+    border-right: none;
+    border-bottom: none;
+  }
+  .footer__iconsContainer {
+    width: 80%;
+    border-right: none;
+    border-bottom: none;
+  }
+  .footer__copyContainer {
+    width: 80%;
+  }
+}
