@@ -359,6 +359,68 @@ main {
   height: 100%;
 }
 
+@media (max-width: 1044px)  {
+
+  .services-card {
+    line-height: 0;
+    width: calc(350px / 1.1);
+    height: calc(360px / 1.1);
+  }
+  .services-title {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 10px;
+    color: #bdbdbd;
+  }
+  
+  .services-description {
+    font-family: "Merriweather", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
+  }
+}
+@media (max-width: 967px)  {
+   .services-description {
+    font-size: 34px;
+  line-height: 43px;
+   }
+  .services-card {
+    line-height: 0;
+    width: calc(350px / 1.5);
+    height: calc(360px / 1.5);
+  }
+  .services-card-container {
+    gap: 15px;
+  }
+}
+@media (max-width: 703px)  {
+  .services-description {
+    font-size: 24px;
+  line-height: 33px;
+   }
+  .services-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+  }
+  .services-card {
+    line-height: 0;
+    width: calc(350px / 1.2);
+    height: calc(360px / 1.2);
+  }
+  .services-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /* ABOUT */
 
