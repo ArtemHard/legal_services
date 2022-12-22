@@ -401,8 +401,7 @@ main {
 }
 @media (max-width: 703px)  {
   .services-description {
-    font-size: 24px;
-  line-height: 33px;
+  display: none;
    }
   .services-screen {
     display: flex;
@@ -533,7 +532,30 @@ text-decoration-line: underline;
 
 color: #005FA3;
 }
-
+@media(max-width: 1220px) {
+  .about {
+    width: 100vw;
+    padding: 2% 5%;
+}
+}
+@media(max-width:967px) {
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+  .aboutLeft-container h4{
+    display: none;
+  }
+}
+@media(max-width: 600px){
+  .aboutRight-container {
+    flex-direction: column;
+  }
+}
 .footer {
   width: 100vw;
   height: 150px;
